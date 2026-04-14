@@ -47,6 +47,8 @@ app.include_router(session.router)
 
 @app.get("/")
 def read_root():
+    if os.path.isfile(SPA_INDEX):
+        return FileResponse(SPA_INDEX)
     return {"message": "Welcome to Lingerie AI API v3.0"}
 
 
