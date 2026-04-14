@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+.trae/
+
+# Project
+cache/
+测试图/
+测试完成图/
+提示词/
+.env
+*.pdf
+
+# Generated images (runtime)
+static/generated/
+
+# Claude
+.claude/

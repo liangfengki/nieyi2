@@ -1,0 +1,15 @@
+测试图/
+测试完成图/
+cache/
+IMG_0122.PNG
+*.pdf
+app.db
+*.db
+*.db.backup
+.git/
+node_modules/
+.DS_Store
+.trae/
+.claude/
+venv/
+.venv/
