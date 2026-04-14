@@ -22,8 +22,8 @@ COPY --from=frontend-build /app/frontend/dist/ ./static/
 
 ENV PYTHONPATH=/app/backend
 ENV ADMIN_PASSWORD=admin123
-ENV DATABASE_URL=sqlite+aiosqlite:////data/app.db
 ENV CORS_ORIGINS=*
+RUN mkdir -p /app/data
 EXPOSE 8000
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
